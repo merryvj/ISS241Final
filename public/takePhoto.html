@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>QuickDraw Project</title>
+
+	<link rel="stylesheet" href="style.css"></link>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Sue+Ellen+Francisco" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+	<script src="sketch.js"></script>
+  <script src="clmtrackr.js"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+<!--
+
+-->
+
+<!--contains controls like save, color options-->
+<div class="buttonBar">
+	<button type="button" onClick="reloadImg()"> &#10227; I don't like this face</button>
+	<button type="button" onClick="stopDraw()"> &#10073;&#10073; Freeze </button>
+	<button type="button" onclick="saveImage()"> &#11123; Save Image </button>
+
+</div>
+
+
+<div class="wrapper">
+	<div id="canvasDiv"></div>
+	<div id="imageGallery"></div>
+	<input id="nameInput" type='text' name="name" placeholder="enter your name">
+
+
+
+</div>
+
+<div class="optionBar">
+	<div>
+		<input type="checkbox" id="lips"></input>
+		<label for="lips"> Lips? </label>
+	</div>
+	<div>
+		<input type = "color" id="lipColor" value="#ff7270"></input>
+		<label for="strokeColor"> Lip Color </label>
+	</div>
+	<div>
+		<input type = "color" value="#FFFFFF" id="bgColor"></input>
+		<label for="bgColor"> Background Color </label>
+	</div>
+	<div>
+		<input type = "color" id="strokeColor"></input>
+		<label for="strokeColor"> Stroke Color </label>
+	</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

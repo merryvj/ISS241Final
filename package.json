@@ -1,0 +1,19 @@
+{
+  "name": "iss241final",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mary Jiang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "filterizr": "^1.3.5",
+    "mccoder-clmtrackr": "^1.0.23",
+    "ndjson": "^1.5.0"
+  }
+}

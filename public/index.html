@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>QuickDraw Project</title>
+
+	<link rel="stylesheet" href="style.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Sue+Ellen+Francisco" rel="stylesheet">
+
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+	<script src="sketch.js"></script>
+
+  <style>
+  #heroImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+
+  }
+
+  h1{
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 3em;
+  }
+
+  #mainPage{
+    top: 20vh;
+    text-align: center;
+    height: 100vh;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+    background-color: #ffd559;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+  }
+
+  #imageGallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1.5rem;
+    height: 100%;
+  }
+
+  #imageGallery div{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgrey;
+
+  }
+
+
+
+
+  </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="wrapper">
+  <div id="mainPage">
+
+    <img id="heroImg" src="images/HeroImage.png"></img>
+    <h1> Generated just the way you are </h1>
+    <a href="takePhoto.html">  Make me a picture </a>
+
+
+  </div>
+
+  <div id="gallery">
+    <div id="imageGallery">
+      <div class="galleryImg"></div>
+      <div class="galleryImg"></div>
+      <div class="galleryImg"></div>
+      <div class="galleryImg"></div>
+
+    </div>
+
+  </div>
+
+
+
+
+</div>
+
+<div id="saveModal">
+
+
+</div>

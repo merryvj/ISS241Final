@@ -1,0 +1,88 @@
+html, body{
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+.wrapper{
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+canvas{
+  background-color: white;
+  border-radius: 10px;
+
+}
+#canvasDiv{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonBar{
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #ffbf00;
+  display: block;
+  padding: 10px;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  border-bottom: solid 4px #efefef;
+}
+
+button{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  position: relative;
+  padding: 5px 8px 5px 8px;
+  margin: 5px;
+  border:none;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #ffd559;
+}
+
+button:hover{
+  background-color: #ffe7a0;
+  transform: scale(1.05);
+  transition: 0.2s;
+
+
+}
+
+.optionBar{
+  position: fixed;
+  bottom: 0px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+
+}
+
+.optionBar div{
+  margin: 15px;
+  float: left;
+}
+
+label{
+  font-size: 0.8em;
+  color: darkgrey;
+}
+
+input[type="color"] {
+	border: none;
+  border-radius: 5px;
+}
+
+.galleryImg{
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px lightgrey;
+}
