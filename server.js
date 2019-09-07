@@ -23,6 +23,7 @@ fs.createReadStream('nose.ndjson')
     const express = require('express');
     const app = express();
     var port = process.env.PORT || 8000;
+    let server = require('http').Server(app);
 
 
     server.listen(port, function() {
