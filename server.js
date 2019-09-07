@@ -22,12 +22,12 @@ fs.createReadStream('nose.ndjson')
 
     const express = require('express');
     const app = express();
-    const port = 3000;
+    var port = process.env.PORT || 8000;
 
-    app.listen(port, () =>{
-      console.log('example app listening on port ${port}')
-    });
 
+    server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
     app.get('/eyes',(request, response) => {
       const index = Math.floor(Math.random() * eyes.length); //generate a random number to pick a random drawing
       response.send(eyes[index]);
